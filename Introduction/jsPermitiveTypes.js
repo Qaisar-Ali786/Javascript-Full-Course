@@ -47,3 +47,54 @@ let num2 = 10;
 // What is a String?
 // collection of words, numbers enclosed in a quotation mark is called string.
 // Examples: let name = "Ali"; is a string;  let number = "21"; is also a string;
+
+// Methods of string
+// string concatination
+
+// let firstName = "Qaisar";
+// let lastName = " Ali";
+// let res = firstName.concat(lastName);
+// console.log(res);
+
+// Append
+
+// let name = "Qaisar";
+// name += " How are you";
+
+// console.log(name);
+
+// Length
+
+// let name = "Qaisar Ali";
+// console.log(name.length);
+
+// cases
+
+// let name = "Qaisar";
+// console.log(name.toLowerCase());
+// let first_Name = "Ahmed";
+// console.log(first_Name.toUpperCase());
+
+// slice
+
+// let name = "abdul ahed";
+// console.log(name.slice(0, 3));
+
+// split and join
+
+// let firstName = "Qaisar ali";
+// let res = firstName.split("");
+// console.log(res);
+// let result = res.join("");
+// console.log(result);
+
+// include
+// let name = "Qaisar";
+// console.log(name.includes("r"));
+// return true
+
+// Trim
+
+// let name = "    Qaisar ali      ";
+// console.log(name.trim());
+// remove extra spaces
