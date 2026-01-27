@@ -14,7 +14,6 @@
 // console.log(res);
 // ___________________________________________
 // 03. string to decimal
-
 // let number = "23.890";
 // let res = parseFloat(number);
 // console.log(res);
