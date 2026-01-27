@@ -1,0 +1,49 @@
+// 01 Numbers
+let num1 = 20;
+let num2 = 10;
+
+// Addition
+// const res = num1 + num2;
+// console.log(res);
+
+// Substraction
+// const res = num1 - num2;
+// console.log(res);
+
+// Multiplication
+// const res = num1 * num2;
+// console.log(res);
+
+// Division
+// const res = num1 / num2;
+// console.log(res);
+
+// Increment
+// const res = num1 + 1;
+// console.log(res);
+
+// Decrement
+// const res = num2 - 2;
+// console.log(res);
+
+// ______________________________________________________
+
+// 02 BOLEAN
+
+// A value which can either be true or false is called bolean.
+// Example of false values
+// 01. False, 02. null, 03. Undefined, 04. 0 , 05. -0, 06. NAN, 07. ", 08. "", 09. ``
+
+// What is the diference between null and undefined values
+// 01. NULL?
+// null can be set by programmer
+// Ex: let name = ; is a null value
+// 02. Undefined?
+// undefined can be set by javascript compiler.
+// Ex let number; is an undefined value.
+
+// ____________________________________________
+
+// What is a String?
+// collection of words, numbers enclosed in a quotation mark is called string.
+// Examples: let name = "Ali"; is a string;  let number = "21"; is also a string;

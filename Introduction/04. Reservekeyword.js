@@ -6,4 +6,4 @@
 
 //  let 10Qaisar = "something"; you will get uncaught syntex erroe
 
-// underscore (_) can be used, but dashes(--) cannot be used in variable name
+// underscore (_) can be used, but dashes(--) cannot be used in variable name.
