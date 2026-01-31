@@ -34,6 +34,7 @@
 //     },
 //   };
 // }
+// We are creating this function for a lot of users and a lot of users are going to provide their data like name, age, work
 
 // const res = get("Qaisar", 32, "Business");
 // console.log(res);
