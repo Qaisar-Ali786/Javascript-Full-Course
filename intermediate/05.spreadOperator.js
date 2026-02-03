@@ -1,13 +1,13 @@
 // Spread Operator (ES6)
 // is a new addition to the set of operators in js ES6. it take an iterable (e.g array) and convert it into individual elements. spread operator create a shallow copies of js object. using this operator make the code concise and expand its readability.
 
-// function giveMe(a, b, c) {
-//   console.log("a", a);
-//   console.log("b", b);
-//   console.log("c", c);
-// }
-// const colors = ["red", "green", "blue"];
-// giveMe(...colors);
+function giveMe(a, b, c) {
+  console.log("a", a);
+  console.log("b", b);
+  console.log("c", c);
+}
+const colors = ["red", "green", "blue"];
+giveMe(colors);
 
 // For Array
 const str1 = ["one", "two", "three"];
