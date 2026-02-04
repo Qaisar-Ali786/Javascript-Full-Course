@@ -1,5 +1,6 @@
 // FOR-OFF LOOP
-// for-off loop is modern iteration statement introduced in ES6.it provide a concise and easy way to loop over the elements of an iterable object like array, string, map and set. it allow you to iterate over the value of element rather than dealing with with keys, that make the code more readable and error-prons.
+// for-of loop is used to iterate over the iterable objects and give you the value directly
+// it is used for strings, arrays, maps, set
 
 const person = ["Qaisar", "Ali", "Ahmed", "abuzar"];
 

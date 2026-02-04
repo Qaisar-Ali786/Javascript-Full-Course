@@ -1,5 +1,6 @@
 // What is For-In Loop
-// in javascript is used to iterate over the enumerable properties of an object.it is way to iterate over the keys of the object.
+// for-in loop is used to iterate over the keys of an object.
+// it give you each key one by one
 
 let person = {
   name: "Qaisar",
