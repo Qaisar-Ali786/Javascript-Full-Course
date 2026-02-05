@@ -78,6 +78,7 @@ const cart = [
   { name: "Shoes", price: 1500 },
   { name: "Hat", price: 300 },
   { name: "Jacket", price: 2000 },
+  { name: "trouser", price: 3400 },
 ];
 
 function applyDiscount(cart, callback) {
