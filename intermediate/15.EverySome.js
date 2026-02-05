@@ -1,7 +1,7 @@
 // Every() Method
 // check if all elements passes a condition. and if all the elements passed the condition return bolean value as true or false.
 
-const people = ["Qaisar", "Ali", "John", "Alex"];
+const people = ["Qaisar", "Ali", "John", "Alex", "Ahmed"];
 
 const res = people.every((person) => person.length === 3);
 console.log(res);
