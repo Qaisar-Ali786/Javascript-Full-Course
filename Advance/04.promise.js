@@ -19,122 +19,80 @@
 
 // catch() method return promise and deal with rejected cases only.
 
-// function checkNumber(number) {
-//   return new Promise((resolve, reject) => {
-//     if (number % 2 == 0) {
-//       resolve(`${number} is an even number`);
-//     } else {
-//       reject(`${number} is an odd number`);
-//     }
-//   });
-// }
-// const number = 6;
-// checkNumber(number)
-//   .then((message) => {
-//     console.log(`successful: ${message}`);
-//   })
-//   .catch((error) => {
-//     console.log(`error: ${error}`);
-//   });
+function checkNumber(number) {
+  return new Promise((resolve, reject) => {
+    if (number % 2 == 0) {
+      resolve(`${number} is an even number`);
+    } else {
+      reject(`${number} is an odd number`);
+    }
+  });
+}
+const number = 6;
+checkNumber(number)
+  .then((message) => {
+    console.log(`successful: ${message}`);
+  })
+  .catch((error) => {
+    console.log(`error: ${error}`);
+  });
 
-// function checkSigh(number) {
-//   return new Promise((resolve, reject) => {
-//     if (number > 0) {
-//       resolve(`${number} is positive number`);
-//     } else {
-//       reject(`${number} is negative number`);
-//     }
-//   });
-// }
-
-// checkNumber(9)
-//   .then((msg) => {
-//     console.log(`successful: ${msg}`);
-//   })
-//   .catch((error) => {
-//     console.log(`Error: ${error}`);
-//   });
-
-// function gettingUserData(name, callback) {
-//   setTimeout(() => {
-//     console.log("valid name");
-//     callback(name);
-//   }, 5000);
-// }
-
-// function gettingUserHobbies(data, callback) {
-//   setTimeout(() => {
-//     console.log(`getting ${data} hobbies`);
-//     callback(["football", "gardening", "hockey"]);
-//   }, 4000);
-// }
-
-// gettingUserData("Qaisar", (data) => {
-//   console.log(data);
-//   gettingUserHobbies(data, (hobbies) => {
-//     console.log(hobbies);
-//   });
-// });
-
-// function gettingUserData(name) {
-//   return new Promise((resolve) => {
-//     console.log("valid name");
-//     resolve(name);
-//   });
-// }
-
-// function gettingUserHobbies() {
-//   return new Promise((resolve) => {
-//     console.log(`getting user hobbies`);
-//     resolve(["football", "cricket", "basketball"]);
-//   });
-// }
-
-// gettingUserData("huxn")
-//   .then((name) => gettingUserHobbies(name))
-//   .then((hobby) => console.log(hobby))
-//   .catch((err) => console.log(err));
-
-function bookFlight(destination, callback) {
-  setTimeout(() => {
-    console.log(`Flight to ${destination} booked.`);
-    callback(`Flight to ${destination}`);
-  }, 1000);
+function checkSigh(number) {
+  return new Promise((resolve, reject) => {
+    if (number > 0) {
+      resolve(`${number} is positive number`);
+    } else {
+      reject(`${number} is negative number`);
+    }
+  });
 }
 
-function bookHotel(flightInfo, callback) {
+checkNumber(9)
+  .then((msg) => {
+    console.log(`successful: ${msg}`);
+  })
+  .catch((error) => {
+    console.log(`Error: ${error}`);
+  });
+
+function gettingUserData(name, callback) {
   setTimeout(() => {
-    console.log(`Hotel booked for ${flightInfo}.`);
-    callback(`Hotel for ${flightInfo}`);
-  }, 1000);
+    console.log("valid name");
+    callback(name);
+  }, 5000);
 }
 
-function packBags(hotelInfo, callback) {
+function gettingUserHobbies(data, callback) {
   setTimeout(() => {
-    console.log(`Bags packed for ${hotelInfo}.`);
-    callback(`Packed bags for ${hotelInfo}`);
-  }, 1000);
+    console.log(`getting ${data} hobbies`);
+    callback(["football", "gardening", "hockey"]);
+  }, 4000);
 }
 
-function startTrip(packedBags, callback) {
-  setTimeout(() => {
-    console.log(`Trip started with ${packedBags}.`);
-    callback();
-  }, 1000);
+gettingUserData("Qaisar", (data) => {
+  console.log(data);
+  gettingUserHobbies(data, (hobbies) => {
+    console.log(hobbies);
+  });
+});
+
+function gettingUserData(name) {
+  return new Promise((resolve) => {
+    console.log("valid name");
+    resolve(name);
+  });
 }
 
-// bookFlight("lahore", (firstOne) => {
-//   bookHotel(firstOne, (secondStep) => {
-//     packBags(secondStep, (thirdStep) => {
-//       startTrip(thirdStep, (lastStep) => {
-//         console.log(`end`);
-//       });
-//     });
-//   });
-// });
+function gettingUserHobbies() {
+  return new Promise((resolve) => {
+    console.log(`getting user hobbies`);
+    resolve(["football", "cricket", "basketball"]);
+  });
+}
 
-bookFlight("lahore")
-  .then((fist) => bookHotel(firt))
-  .then((second) => packBags(second))
-  .then((third) => startTrip(third))
+gettingUserData("huxn")
+  .then((name) => gettingUserHobbies(name))
+  .then((hobby) => console.log(hobby))
   .catch((err) => console.log(err));
+
+
