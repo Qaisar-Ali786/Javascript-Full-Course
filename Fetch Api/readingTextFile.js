@@ -76,16 +76,16 @@ const result = document.querySelector(".result");
 // Using async/await (With Error Handling)
 // const result = document.querySelector(".result");
 
-async function readData() {
-  try {
-    const response = await fetch("text.txt");
-    if (!response.ok) return response.statusText;
-    const data = await response.text();
-    result.innerHTML = data;
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function readData() {
+//   try {
+//     const response = await fetch("text.txt");
+//     if (!response.ok) return response.statusText;
+//     const data = await response.text();
+//     result.innerHTML = data;
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-readData();
+// readData();
